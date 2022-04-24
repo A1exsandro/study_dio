@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+
+    <style>
+        .container{
+            max-width: 400px;
+            border: 2px solid black;
+            margin: 0;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .item{
+            background-color: blue;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .between{
+            justify-content: space-between;
+        }
+        .around{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row - Default</h1>
+    <h3>Flex Start - Default</h3>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Flex End</h3>
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Space Between</h3>
+    <div class="container between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Space Around</h3>
+    <div class="container around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h1>Column</h1>
+    <h3>Flex Start - Default</h3>
+    <div class="container column column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Flex End</h3>
+    <div class="container column flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="container column center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Space Between</h3>
+    <div class="container column between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <h3>Space Around</h3>
+    <div class="container column around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">outro item</div>
+    </div>
+</body>
+</html>
